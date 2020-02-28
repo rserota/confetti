@@ -19,7 +19,7 @@ function launchRocket(){
         spinSpeed      : spinSpeed
     }
     rockets.push(rocket)
-    if ( navigator.vibrate ) { navigator.vibrate(10) }
+    if ( navigator.vibrate ) { navigator.vibrate(200) }
 }
 
 function launchParticle(rocket){
@@ -109,14 +109,3 @@ document.addEventListener('keydown', function(event){
     }
 })
 
-if ( window.Accelerometer ) {
-
-    let accelerometer = new Accelerometer({frequency: 60});
-
-    accelerometer.addEventListener('reading', e => {
-        console.log("Acceleration along the X-axis " + accelerometer.x);
-        console.log("Acceleration along the Y-axis " + accelerometer.y);
-        console.log("Acceleration along the Z-axis " + accelerometer.z);
-    });
-    accelerometer.start();
-}
