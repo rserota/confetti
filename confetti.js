@@ -36,7 +36,12 @@ function launchParticle(rocket){
     var red = Math.floor(Math.random() * 255)
     var green = Math.floor(Math.random() * 255)
     var blue = Math.floor(Math.random() * 255)
+
+    var red2 = Math.floor(Math.random() * 115)
+    var green2 = Math.floor(Math.random() * 115)
+    var blue2 = Math.floor(Math.random() * 115)
     particleElement.style.backgroundColor=`rgb(${red}, ${green}, ${blue})`
+    particleElement.style.borderColor=`rgb(${red2}, ${green2}, ${blue2})`
     particleElement.style.transform = 'translateY(50%) translateX(-50%)'
     var particle = {
         element        : particleElement,
