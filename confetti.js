@@ -1,6 +1,6 @@
 var rockets = []
 var particles = []
-const gravity = -.00004
+const gravity = -.00005
 function launchRocket(){
     var launchTime = performance.now()
     var startVelocityY = ((Math.random() * .03) - .015 ) + .07
